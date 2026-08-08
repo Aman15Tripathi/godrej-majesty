@@ -1,0 +1,684 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ----------------------------
+   Navbar
+----------------------------- */
+
+.navbar-brand {
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 8px;
+    color: #444;
+    transition: .3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    padding: 10px 22px;
+}
+
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity .8s ease;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+}
+
+.hero-card {
+    border-radius: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.hero-dots {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.hero-dot {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,.5);
+    transition: .3s;
+}
+
+.hero-dot.active {
+    width: 30px;
+    border-radius: 20px;
+    background: white;
+}
+
+
+/* ======================
+    BENEFITS TICKER
+====================== */
+
+.ticker-section {
+    background: #0284c7;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 16px 0;
+}
+
+.ticker-track {
+    display: inline-flex;
+    animation: ticker 28s linear infinite;
+}
+
+.ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 35px;
+    color: white;
+    font-weight: 600;
+    font-size: .95rem;
+}
+
+.ticker-item svg {
+    color: #cfefff;
+}
+
+@keyframes ticker {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+/* =============================
+   SECTION TITLE
+============================= */
+
+.display-5 {
+    letter-spacing: -.5px;
+}
+
+/* =============================
+   OVERVIEW
+============================= */
+
+.overview-card {
+    transition: all .35s ease;
+    border-radius: 18px;
+}
+
+.overview-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0,0,0,.12) !important;
+}
+
+.overview-card svg {
+    transition: .3s;
+}
+
+.overview-card:hover svg {
+    transform: scale(1.15);
+}
+
+
+/* ==========================
+   PROPERTY CARD
+========================== */
+
+.property-card {
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all .35s ease;
+}
+
+.property-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 45px rgba(0,0,0,.15) !important;
+}
+
+.property-image {
+    height: 240px;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+.property-card:hover .property-image {
+    transform: scale(1.08);
+}
+
+/* ==========================
+   FLOOR PLANS
+========================== */
+
+.floor-plan-card {
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all .35s ease;
+}
+
+.floor-plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15) !important;
+}
+
+.floor-plan-image {
+    height: 280px;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+.floor-plan-card:hover .floor-plan-image {
+    transform: scale(1.06);
+}
+
+/* ==========================
+   PARALLAX
+========================== */
+
+.parallax-section {
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+}
+
+.parallax-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.parallax-section .container {
+    z-index: 2;
+}
+
+/* ==========================
+   AMENITIES
+========================== */
+
+.amenity-card {
+    border-radius: 18px;
+    transition: all .35s ease;
+}
+
+.amenity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.15) !important;
+}
+
+.amenity-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .35s;
+}
+
+.amenity-card:hover .amenity-icon {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about-image {
+    transition: transform .4s ease;
+}
+
+.about-image:hover {
+    transform: scale(1.03);
+}
+
+#about .lead {
+    line-height: 1.8;
+}
+
+#about span {
+    font-weight: 500;
+}
+
+
+/* ==========================
+   REVIEWS
+========================== */
+
+.review-card {
+    border-radius: 18px;
+    transition: all .35s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, .15) !important;
+}
+
+.review-card p {
+    line-height: 1.8;
+}
+
+.review-card .text-warning {
+    font-size: 1rem;
+}
+
+
+/* ==========================
+   CONTACT
+========================== */
+
+.contact-form-card {
+    border-radius: 20px;
+}
+
+.contact-info-card {
+    gap: 18px;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: #0d6efd;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px 15px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer-section {
+    background: #111827;
+    color: white;
+    padding: 70px 0 25px;
+}
+
+.footer-link {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.footer-link:hover {
+    color: white;
+    padding-left: 6px;
+}
+
+.social-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.08);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.social-icon:hover {
+    background: #0d6efd;
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:576px){
+
+    /* Navbar */
+
+    .navbar-brand{
+        font-size:1rem;
+    }
+
+    .navbar-nav{
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .navbar .btn{
+        width:100%;
+        margin-top:15px;
+    }
+
+    /* Hero */
+
+    .hero-section{
+        min-height:auto;
+        padding:80px 0;
+    }
+
+    .hero-card{
+        margin-top:50px;
+    }
+
+    .hero-dots{
+        display:none;
+    }
+
+    /* Section */
+
+    .display-5{
+        font-size:2rem;
+    }
+
+    .display-3{
+        font-size:2.2rem;
+    }
+
+    section{
+        padding-top:60px!important;
+        padding-bottom:60px!important;
+    }
+
+    /* Cards */
+
+    .property-image,
+    .floor-plan-image{
+        height:220px;
+    }
+
+    .overview-card,
+    .amenity-card,
+    .review-card,
+    .property-card,
+    .floor-plan-card{
+        margin-bottom:10px;
+    }
+
+    /* Contact */
+
+    .contact-info-card{
+        margin-bottom:25px;
+    }
+
+    .contact-icon{
+        width:50px;
+        height:50px;
+    }
+
+    /* Footer */
+
+    .footer-section{
+        text-align:center;
+    }
+
+    .social-icon{
+        margin:auto;
+    }
+
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (min-width:577px) and (max-width:991px){
+
+    .hero-section{
+        padding:100px 0;
+    }
+
+    .hero-card{
+        margin:auto;
+        max-width:500px;
+    }
+
+    .display-3{
+        font-size:3rem;
+    }
+
+    .display-5{
+        font-size:2.5rem;
+    }
+
+    .property-image,
+    .floor-plan-image{
+        height:250px;
+    }
+
+}
+
+/* ==========================
+   LARGE DESKTOP
+========================== */
+
+@media (min-width:1400px){
+
+    .container{
+        max-width:1320px;
+    }
+
+    .display-3{
+        font-size:4.5rem;
+    }
+
+    .display-5{
+        font-size:3rem;
+    }
+
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.btn{
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.form-control{
+    min-height:50px;
+}
+
+textarea.form-control{
+    min-height:140px;
+}
+
+.hero-card {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+}
+
+
+/* ==========================
+   TYPOGRAPHY
+========================== */
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.display-3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.display-5 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: .95rem;
+}
+
+
+.navbar-brand{
+    font-size:1.15rem;
+}
+
+.nav-link{
+    font-size:.92rem;
+}
+
+.navbar .btn{
+    font-size:.9rem;
+}
+
+.hero-card{
+    width:360px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.hero-card .card-body{
+    padding:20px;
+}
+
+.hero-card table th,
+.hero-card table td{
+
+    font-size:.9rem;
+
+    padding:8px;
+}
+
+.hero-card .alert{
+
+    margin-bottom:10px;
+
+    padding:10px;
+
+    font-size:.85rem;
+}
+
+.hero-card h3{
+
+    font-size:1.8rem;
+}
+
+.hero-card .btn{
+
+    padding:12px;
+
+    font-size:.95rem;
+}
+
+section{
+
+    padding:80px 0;
+}
