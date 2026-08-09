@@ -1,3 +1,5 @@
+import "../../styles/AmenityCard.css"
+
 const AmenityCard = ({ amenity }) => {
     const Icon = amenity.icon;
 

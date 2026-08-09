@@ -1,3 +1,5 @@
+import "../../styles/PropertyCard.css"
+
 const PropertyCard = ({ property, onClick }) => {
     return (
         <div className="card border-0 shadow property-card h-100"

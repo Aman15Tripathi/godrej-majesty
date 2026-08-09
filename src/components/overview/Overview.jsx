@@ -1,5 +1,6 @@
 import overviewData from "../../assets/data/overviewData";
 import SectionTitle from "../common/SectionTitle";
+import "../../styles/Overview.css"
 
 const Overview = () => {
     return (

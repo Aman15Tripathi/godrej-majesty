@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ContactForm from "../contact/ContactForm";
+import "../../styles/Parallax.css"
 
 const Parallax = () => {
     const [showContactForm, setShowContactForm] = useState(false);

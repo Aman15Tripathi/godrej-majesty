@@ -1,0 +1,145 @@
+/* =========================================
+   HERO CARD - BLACK / GOLD / WHITE THEME
+   ========================================= */
+
+.hero-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #111111;
+}
+
+/* =========================
+   BOOKING OPEN HEADER
+   ========================= */
+
+.hero-card .bg-primary {
+    background-color: #0b0b0b !important;
+    color: #c9a227 !important;
+    border-bottom: 2px solid #c9a227;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   CARD BODY
+   ========================= */
+
+.hero-card .card-body {
+    padding: 20px;
+}
+
+
+/* =========================
+   PROJECT TITLE
+   ========================= */
+
+.hero-card h2 {
+    color: #0b0b0b;
+    font-size: 1.45rem;
+}
+
+.hero-card p {
+    color: #555555;
+}
+
+
+/* =========================
+   DETAILS TABLE
+   ========================= */
+
+.hero-card .table {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.hero-card .table th {
+    color: #0b0b0b;
+    font-weight: 600;
+}
+
+.hero-card .table td {
+    color: #555555;
+    text-align: right;
+}
+
+.hero-card .table > :not(caption) > * > * {
+    border-bottom-color: #e5e5e5;
+}
+
+
+/* =========================
+   GOLD INFORMATION BOXES
+   ========================= */
+
+.hero-card .alert-primary {
+    background-color: #f8f3df !important;
+    border: 1px solid #c9a227 !important;
+    color: #0b0b0b !important;
+    border-radius: 6px;
+}
+
+
+/* =========================
+   LUXURY TEXT
+   ========================= */
+
+.hero-card h6 {
+    color: #555555;
+    font-weight: 600;
+}
+
+.hero-card h3.text-primary {
+    color: #c9a227 !important;
+    font-size: 1.8rem;
+}
+
+
+/* =========================
+   BOOK SITE VISIT BUTTON
+   ========================= */
+
+.hero-card .btn-primary {
+    background-color: #c9a227 !important;
+    border-color: #c9a227 !important;
+    color: #0b0b0b !important;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.hero-card .btn-primary:hover {
+    background-color: #0b0b0b !important;
+    border-color: #0b0b0b !important;
+    color: #c9a227 !important;
+}
+
+
+/* =========================
+   RERA TEXT
+   ========================= */
+
+.hero-card .small {
+    color: #777777;
+    font-size: 0.75rem;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 576px) {
+
+    .hero-card .card-body {
+        padding: 16px;
+    }
+
+    .hero-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-card h3.text-primary {
+        font-size: 1.6rem;
+    }
+}

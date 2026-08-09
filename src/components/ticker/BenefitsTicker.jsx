@@ -1,4 +1,5 @@
 import benefitsData from "../../assets/data/benefitsData";
+import "../../styles/BenefitsTicker.css"
 
 const BenefitsTicker = () => {
     const tickerItems = [...benefitsData, ...benefitsData];

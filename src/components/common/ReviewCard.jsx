@@ -1,8 +1,10 @@
 import { FaQuoteLeft, FaStar } from "react-icons/fa6";
 
+import "../../styles/ReviewCard.css"
+
 const ReviewCard = ({ review }) => {
     return (
-        <div className="card border-0 shadow review-card h-100">
+        <div className="card border-0 shadow-sm h-100 review-card">
 
             <div className="card-body p-4">
 

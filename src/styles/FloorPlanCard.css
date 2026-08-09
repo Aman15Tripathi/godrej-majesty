@@ -1,0 +1,100 @@
+.floor-plan-card {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* ========================================= CARD HOVER ========================================= */
+.floor-plan-card:hover {
+    border-color: #c9a227 !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ========================================= FLOOR PLAN IMAGE ========================================= */
+.floor-plan-card .floor-plan-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ========================================= CARD BODY ========================================= */
+.floor-plan-card .card-body {
+    padding: 22px;
+}
+
+/* ========================================= TITLE ========================================= */
+.floor-plan-card h4 {
+    color: #0b0b0b;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+/* ========================================= AREA ========================================= */
+.floor-plan-card .text-secondary {
+    color: #666666 !important;
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+}
+
+/* ========================================= VIEW FLOOR PLAN BUTTON ========================================= */
+.floor-plan-card .btn-outline-primary {
+    color: #c9a227 !important;
+    border-color: #c9a227 !important;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 9px 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button hover */
+.floor-plan-card .btn-outline-primary:hover,
+.floor-plan-card .btn-outline-primary:focus {
+    background-color: #c9a227 !important;
+    border-color: #c9a227 !important;
+    color: #0b0b0b !important;
+    box-shadow: none;
+}
+
+/* ========================================= TABLET ========================================= */
+@media (max-width: 991.98px) {
+    .floor-plan-card .floor-plan-image {
+        height: 220px;
+    }
+
+    .floor-plan-card .card-body {
+        padding: 20px;
+    }
+
+    .floor-plan-card h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ========================================= MOBILE ========================================= */
+@media (max-width: 575.98px) {
+    .floor-plan-card .floor-plan-image {
+        height: 210px;
+    }
+
+    .floor-plan-card .card-body {
+        padding: 18px;
+    }
+
+    .floor-plan-card h4 {
+        font-size: 1.15rem;
+    }
+
+    .floor-plan-card .text-secondary {
+        font-size: 0.85rem;
+    }
+
+    .floor-plan-card .btn-outline-primary {
+        padding: 8px 14px;
+    }
+}

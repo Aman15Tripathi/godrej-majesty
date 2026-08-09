@@ -1,10 +1,11 @@
 import { FaBuilding, FaPhoneAlt } from "react-icons/fa";
+import "../../styles/Navbar.css"
 
 
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg py-lg-3 py-2 bg-white shadow-sm sticky-top py-2">
+        <nav className="navbar navbar-expand-lg py-lg-3 py-2 bg-black shadow-sm sticky-top py-2">
             <div className="container">
 
                 {/* Logo */}

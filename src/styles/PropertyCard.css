@@ -1,0 +1,130 @@
+.property-card {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* ========================================= CARD HOVER ========================================= */
+.property-card:hover {
+    transform: translateY(-6px);
+    border-color: #c9a227 !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ========================================= PROPERTY IMAGE ========================================= */
+.property-card .property-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Image hover */
+.property-card:hover .property-image {
+    transform: scale(1.03);
+}
+
+/* ========================================= CARD BODY ========================================= */
+.property-card .card-body {
+    padding: 22px;
+}
+
+/* ========================================= PROPERTY TITLE ========================================= */
+.property-card h4 {
+    color: #0b0b0b;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+/* ========================================= AREA ========================================= */
+.property-card .text-secondary {
+    color: #666666 !important;
+    font-size: 0.9rem;
+}
+
+/* ========================================= PRICE ========================================= */
+.property-card h3.text-primary {
+    color: #c9a227 !important;
+    font-size: 1.45rem;
+    margin-top: 8px;
+}
+
+/* ========================================= BOOKING BADGE ========================================= */
+.property-card .badge.bg-success {
+    background-color: #0b0b0b !important;
+    color: #c9a227 !important;
+    border: 1px solid #c9a227;
+    padding: 7px 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* ========================================= VIEW DETAILS BUTTON ========================================= */
+.property-card .btn-primary {
+    background-color: #c9a227 !important;
+    border-color: #c9a227 !important;
+    color: #0b0b0b !important;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 9px 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button hover */
+.property-card .btn-primary:hover {
+    background-color: #0b0b0b !important;
+    border-color: #0b0b0b !important;
+    color: #c9a227 !important;
+}
+
+/* ========================================= TABLET ========================================= */
+@media (max-width: 991.98px) {
+    .property-card .property-image {
+        height: 220px;
+    }
+
+    .property-card .card-body {
+        padding: 20px;
+    }
+
+    .property-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .property-card h3.text-primary {
+        font-size: 1.35rem;
+    }
+}
+
+/* ========================================= MOBILE ========================================= */
+@media (max-width: 575.98px) {
+    .property-card .property-image {
+        height: 210px;
+    }
+
+    .property-card .card-body {
+        padding: 18px;
+    }
+
+    .property-card h4 {
+        font-size: 1.15rem;
+    }
+
+    .property-card .text-secondary {
+        font-size: 0.85rem;
+    }
+
+    .property-card h3.text-primary {
+        font-size: 1.3rem;
+    }
+
+    .property-card .btn-primary {
+        padding: 8px 14px;
+    }
+}

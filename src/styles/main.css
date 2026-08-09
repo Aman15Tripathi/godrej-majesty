@@ -1,10 +1,22 @@
+:root {
+    --theme-black: #0b0b0b;
+    --theme-black-light: #151515;
+    --theme-gold: #c9a227;
+    --theme-gold-light: #e0c15a;
+    --theme-white: #ffffff;
+    --theme-gray: #f5f5f5;
+    --theme-text: #222222;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    background: #ffffff;
+    /* background: #ffffff; */
+    background: var(--theme-black);
+    color: var(--theme-gold);
     overflow-x: hidden;
 }
 
@@ -21,33 +33,62 @@ img {
 /* ----------------------------
    Navbar
 ----------------------------- */
+/* .text-primary{
+background-color: var(--theme-gold);
+color: var(--theme-black);
+}
+
+.btn-primary {
+    background-color: var(--theme-gold);
+    border-color: var(--theme-gold);
+    color: var(--theme-black);
+}
 
 .navbar-brand {
     font-size: 1.35rem;
     letter-spacing: 1px;
+    color: var(--theme-gold);
+}
+
+.navbar-brand:hover {
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+    color: var(--theme-gray);
 }
 
 .navbar-nav .nav-link {
     font-weight: 500;
     margin: 0 8px;
-    color: #444;
+    /* color: #444; */
+    /* color: var(--theme-gold);
     transition: .3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #0d6efd;
+    /* color: #0d6efd; */
+    /* color: var(--theme-white);
+    
+}
+
+.navbar-toggler-icon{
+    color: var(--theme-gold);
+   
 }
 
 .btn-primary {
     border-radius: 8px;
     padding: 10px 22px;
-}
+} */ */ */
+
+
+
+
 
 
 /* ==========================
    HERO SECTION
 ========================== */
-
+/* 
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -101,7 +142,7 @@ img {
     width: 30px;
     border-radius: 20px;
     background: white;
-}
+} */
 
 
 /* ======================

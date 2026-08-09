@@ -4,6 +4,8 @@ import SectionTitle from "../common/SectionTitle";
 import PropertyCard from "../common/PropertyCard";
 import ContactForm from "../contact/ContactForm";
 
+import "../../styles/UnitTypes.css"
+
 const UnitTypes = () => {
     const [showContactForm, setShowContactForm] = useState(false);
 

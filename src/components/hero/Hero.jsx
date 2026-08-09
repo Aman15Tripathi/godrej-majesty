@@ -1,5 +1,6 @@
 import HeroCard from "./HeroCard";
 import HeroSlider from "./HeroSlider";
+import "../../styles/Hero.css"
 
 const Hero = () => {
     return (

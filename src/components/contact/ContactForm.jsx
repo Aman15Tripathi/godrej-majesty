@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../styles/ContactForm.css";
 
 const ContactForm = ({ isOpen, onClose }) => {
     const [formData, setFormData] = useState({
@@ -89,7 +90,7 @@ const ContactForm = ({ isOpen, onClose }) => {
 
     return (
         <div
-            className="modal fade show d-block"
+            className="modal fade show d-block contact-modal"
             tabIndex="-1"
             role="dialog"
             style={{

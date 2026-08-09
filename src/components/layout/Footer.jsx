@@ -1,8 +1,9 @@
 import footerData from "../../assets/data/footerData";
+import "../../styles/Footer.css";
 
 const Footer = () => {
     return (
-        <footer className="footer-section">
+        <footer className="site-footer">
 
             <div className="container">
 

@@ -1,12 +1,13 @@
 import reviewsData from "../../assets/data/reviewsData";
 import SectionTitle from "../common/SectionTitle";
 import ReviewCard from "../common/ReviewCard";
+import "../../styles/Reviews.css"
 
 const Reviews = () => {
     return (
         <section
             id="reviews"
-            className="py-5"
+            className="reviews-section py-5"
         >
             <div className="container">
 

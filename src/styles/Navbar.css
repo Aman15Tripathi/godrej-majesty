@@ -1,0 +1,86 @@
+
+   /* BLACK + GOLD NAVBAR THEME */
+
+
+.navbar {
+    background-color: #0b0b0b !important;
+    border-bottom: 1px solid rgba(201, 162, 39, 0.35);
+}
+
+/* Logo */
+.navbar .navbar-brand {
+    color: #ffffff !important;
+    letter-spacing: 0.5px;
+}
+
+.navbar .navbar-brand .text-primary {
+    color: #c9a227 !important;
+}
+
+/* Navigation Links */
+.navbar .nav-link {
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #c9a227 !important;
+}
+
+/* Active Link - agar Bootstrap active class use kare */
+.navbar .nav-link.active {
+    color: #c9a227 !important;
+}
+
+/* Phone Button */
+.navbar .btn-primary {
+    background-color: #c9a227 !important;
+    border-color: #c9a227 !important;
+    color: #0b0b0b !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #e0c15a !important;
+    border-color: #e0c15a !important;
+    color: #0b0b0b !important;
+}
+
+/* Phone Icon */
+.navbar .btn-primary svg {
+    color: #0b0b0b;
+}
+
+/* Mobile Toggle */
+.navbar .navbar-toggler {
+    border-color: #c9a227;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(201, 162, 39, 0.25);
+}
+
+/* Bootstrap navbar toggler icon ko white banana */
+.navbar .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Mobile Menu */
+@media (max-width: 991.98px) {
+
+    .navbar .navbar-collapse {
+        background-color: #0b0b0b;
+        padding: 15px 0;
+    }
+
+    .navbar .nav-link {
+        padding: 10px 15px;
+    }
+
+    .navbar .btn-primary {
+        margin-top: 10px;
+        width: fit-content;
+    }
+}

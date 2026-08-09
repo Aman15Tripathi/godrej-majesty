@@ -1,11 +1,12 @@
 import { useState } from "react";
 import ContactForm from "../contact/ContactForm";
+import "../../styles/FloorPlanCard.css"
 
 const FloorPlanCard = ({ plan }) => {
     const [showContactForm, setShowContactForm] = useState(false);
 
     return (
-        <div className="card h-100 border-0 shadow-sm">
+        <div className="card h-100 border-0 shadow-sm floor-plan-card">
 
             <img
                 src={plan.image}

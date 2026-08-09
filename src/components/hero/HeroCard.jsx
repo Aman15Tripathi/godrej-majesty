@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ContactForm from "../contact/ContactForm";
 
+import "../../styles/HeroCard.css"
+
 const HeroCard = () => {
     const [showContactForm, setShowContactForm] = useState(false);
 

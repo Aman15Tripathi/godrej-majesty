@@ -1,0 +1,144 @@
+
+
+.about-section {
+    background-color: #ffffff;
+    color: #0b0b0b;
+}
+
+
+/* =========================================
+   ABOUT IMAGE
+   ========================================= */
+
+.about-section .about-image {
+    width: 100%;
+    display: block;
+
+    border: 1px solid #e5e5e5;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.about-section .about-image:hover {
+    transform: translateY(-4px);
+
+    border-color: #c9a227;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+.about-section .lead.text-secondary {
+    color: #555555 !important;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   HIGHLIGHTS
+   ========================================= */
+
+.about-section .d-flex {
+    color: #222222;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   CHECK ICON
+   ========================================= */
+
+.about-section .text-primary {
+    color: #c9a227 !important;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   DOWNLOAD BROCHURE BUTTON
+   ========================================= */
+
+.about-section .btn-primary {
+    background-color: #c9a227 !important;
+    border-color: #c9a227 !important;
+
+    color: #0b0b0b !important;
+
+    font-weight: 700;
+
+    border-radius: 6px;
+
+    padding: 10px 24px;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================
+   BUTTON HOVER
+   ========================================= */
+
+.about-section .btn-primary:hover {
+    background-color: #0b0b0b !important;
+    border-color: #0b0b0b !important;
+
+    color: #c9a227 !important;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 991.98px) {
+
+    .about-section .lead.text-secondary {
+        font-size: 1rem;
+    }
+
+    .about-section .d-flex {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 575.98px) {
+
+    .about-section .lead.text-secondary {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
+
+    .about-section .d-flex {
+        font-size: 0.85rem;
+    }
+
+    .about-section .btn-primary {
+        width: 100%;
+        padding: 9px 20px;
+    }
+}
+

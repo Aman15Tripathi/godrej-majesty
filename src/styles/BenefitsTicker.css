@@ -1,0 +1,147 @@
+
+
+   /* BENEFITS TICKER
+   BLACK / GOLD / WHITE THEME */
+
+
+.ticker-section {
+    width: 100%;
+    background-color: #0b0b0b;
+    border-top: 1px solid rgba(201, 162, 39, 0.35);
+    border-bottom: 1px solid rgba(201, 162, 39, 0.35);
+
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* =========================================
+   TICKER TRACK
+   ========================================= */
+
+.ticker-track {
+    display: flex;
+    align-items: center;
+
+    width: max-content;
+
+    animation: ticker-scroll 25s linear infinite;
+}
+
+
+/* =========================================
+   TICKER ITEM
+   ========================================= */
+
+.ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 0 28px;
+
+    color: #ffffff;
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ICON
+   ========================================= */
+
+.ticker-item svg {
+    width: 18px;
+    height: 18px;
+
+    flex-shrink: 0;
+
+    color: #c9a227;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* =========================================
+   HOVER
+   ========================================= */
+
+.ticker-item:hover {
+    color: #c9a227;
+}
+
+.ticker-item:hover svg {
+    transform: scale(1.1);
+}
+
+
+/* =========================================
+   TICKER ANIMATION
+   ========================================= */
+
+@keyframes ticker-scroll {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* =========================================
+   PAUSE ON HOVER
+   ========================================= */
+
+.ticker-section:hover .ticker-track {
+    animation-play-state: paused;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 991.98px) {
+
+    .ticker-item {
+        padding: 0 22px;
+        font-size: 0.85rem;
+    }
+
+    .ticker-item svg {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 575.98px) {
+
+    .ticker-item {
+        gap: 6px;
+
+        padding: 0 18px;
+
+        font-size: 0.8rem;
+    }
+
+    .ticker-item svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .ticker-track {
+        animation-duration: 20s;
+    }
+}
+

@@ -1,0 +1,91 @@
+.amenity-card {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5 !important;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* ========================================= CARD HOVER ========================================= */
+.amenity-card:hover {
+    transform: translateY(-5px);
+    border-color: #c9a227 !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ========================================= CARD BODY ========================================= */
+.amenity-card .card-body {
+    padding: 24px !important;
+}
+
+/* ========================================= AMENITY ICON ========================================= */
+.amenity-card .amenity-icon {
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0b0b;
+    border: 1px solid #c9a227;
+    border-radius: 50%;
+    color: #c9a227;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* ========================================= ICON HOVER ========================================= */
+.amenity-card:hover .amenity-icon {
+    background-color: #c9a227;
+    color: #0b0b0b;
+    transform: scale(1.05);
+}
+
+/* ========================================= TITLE ========================================= */
+.amenity-card h4 {
+    color: #0b0b0b;
+    font-size: 1.2rem;
+    margin-bottom: 12px !important;
+}
+
+/* ========================================= DESCRIPTION ========================================= */
+.amenity-card .text-secondary {
+    color: #666666 !important;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ========================================= TABLET ========================================= */
+@media (max-width: 991.98px) {
+    .amenity-card .card-body {
+        padding: 20px !important;
+    }
+
+    .amenity-card .amenity-icon {
+        width: 62px;
+        height: 62px;
+    }
+
+    .amenity-card h4 {
+        font-size: 1.15rem;
+    }
+}
+
+/* ========================================= MOBILE ========================================= */
+@media (max-width: 575.98px) {
+    .amenity-card .card-body {
+        padding: 18px !important;
+    }
+
+    .amenity-card .amenity-icon {
+        width: 58px;
+        height: 58px;
+    }
+
+    .amenity-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .amenity-card .text-secondary {
+        font-size: 0.85rem;
+    }
+}

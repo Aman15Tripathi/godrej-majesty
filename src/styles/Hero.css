@@ -1,0 +1,88 @@
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+}
+
+
+/* =========================================
+   HERO CARD WRAPPER
+   ========================================= */
+
+.hero-card-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 100%;
+
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    pointer-events: none;
+}
+
+
+/* Allow card itself to receive clicks */
+
+.hero-card-wrapper .row,
+.hero-card-wrapper .col-lg-4,
+.hero-card-wrapper .col-md-5,
+.hero-card-wrapper .hero-card {
+    pointer-events: auto;
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 992px) {
+
+    .hero-card-wrapper {
+        top: 50%;
+    }
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 991.98px) {
+
+    .hero-card-wrapper {
+        position: absolute;
+
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 767.98px) {
+
+    .hero-card-wrapper {
+        position: relative;
+
+        top: auto;
+        right: auto;
+
+        transform: none;
+
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+}
+

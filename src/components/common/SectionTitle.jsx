@@ -1,6 +1,8 @@
+import "../../styles/SectionTitle.css";
+
 const SectionTitle = ({ title, subtitle }) => {
     return (
-        <div className="text-center mb-5">
+        <div className="section-title">
 
             {subtitle && (
                 <p className="text-primary fw-semibold text-uppercase mb-2">

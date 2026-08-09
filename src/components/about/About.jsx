@@ -1,10 +1,11 @@
 import { FaCircleCheck } from "react-icons/fa6";
 import SectionTitle from "../common/SectionTitle";
 import aboutData from "../../assets/data/aboutData";
+import "../../styles/About.css";
 
 const About = () => {
     return (
-        <section id="about" className="py-5 bg-light">
+        <section id="about" className=" about-section py-5 bg-light">
 
             <div className="container">
 

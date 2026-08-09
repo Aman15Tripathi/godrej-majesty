@@ -1,12 +1,13 @@
 import floorPlanData from "../../assets/data/floorPlanData";
 import SectionTitle from "../common/SectionTitle";
 import FloorPlanCard from "../common/FloorPlanCard";
+import "../../styles/FloorPlans.css";
 
 const FloorPlans = () => {
     return (
         <section
             id="plans"
-            className="py-5 bg-light"
+            className="floor-plans-section py-5 bg-light"
         >
             <div className="container">
 
