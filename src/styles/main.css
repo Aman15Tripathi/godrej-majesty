@@ -710,3 +710,20 @@ section{
         justify-content: center !important;
     }
 }
+
+
+@media (max-width: 576px) {
+    .ticker-section {
+        height: 30px;
+    }
+
+    .ticker-item {
+        gap: 6px;
+        font-size: 13px;
+    }
+
+    .ticker-item svg {
+        width: 16px;
+        height: 16px;
+    }
+}
