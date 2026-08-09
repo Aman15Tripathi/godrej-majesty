@@ -22,6 +22,11 @@ const FloorPlans = () => {
                         <div
                             className="col-lg-4 col-md-6"
                             key={plan.id}
+                            onClick={() => {
+                                document
+                                    .getElementById("contact-form")
+                                    ?.scrollIntoView({ behavior: "smooth" });
+                            }}
                         >
                             <FloorPlanCard plan={plan} />
                         </div>

@@ -3,22 +3,18 @@ import HeroSlider from "./HeroSlider";
 
 const Hero = () => {
     return (
-        <section className="hero-section">
+        <section className="hero-section position-relative">
 
             <HeroSlider />
 
-            <div className="container position-relative">
-
-                <div className="row align-items-center min-vh-100">
+            <div className="container position-absolute top-50 start-50 translate-middle">
+                <div className="row justify-content-end">
 
                     <div className="col-lg-4">
-
                         <HeroCard />
-
                     </div>
 
                 </div>
-
             </div>
 
         </section>

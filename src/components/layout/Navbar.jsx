@@ -1,4 +1,6 @@
-import { FaBuilding } from "react-icons/fa";
+import { FaBuilding, FaPhoneAlt } from "react-icons/fa";
+
+
 
 const Navbar = () => {
     return (
@@ -84,10 +86,11 @@ const Navbar = () => {
                     </ul>
 
                     <a
-                        href="#contact"
-                        className="btn btn-primary px-4"
+                        href="tel:+919278282828"
+                        className="btn btn-primary px-4 d-flex align-items-center gap-2"
                     >
-                        Enquire Now
+                        <FaPhoneAlt size={16} />
+                        +91 9278282828
                     </a>
 
                 </div>

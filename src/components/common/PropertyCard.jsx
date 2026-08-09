@@ -1,6 +1,9 @@
-const PropertyCard = ({ property }) => {
+const PropertyCard = ({ property, onClick }) => {
     return (
-        <div className="card border-0 shadow property-card h-100">
+        <div className="card border-0 shadow property-card h-100"
+            onClick={onClick}
+            style={{ cursor: "pointer" }}
+        >
 
             <img
                 src={property.image}

@@ -1,7 +1,12 @@
+import { useState } from "react";
+import ContactForm from "../contact/ContactForm";
+
 const Parallax = () => {
+    const [showContactForm, setShowContactForm] = useState(false);
+
     return (
         <section className="parallax-section">
-
+            
             <div className="parallax-overlay"></div>
 
             <div className="container position-relative">
@@ -19,7 +24,10 @@ const Parallax = () => {
                             amenities, elegant architecture, and an unmatched lifestyle.
                         </p>
 
-                        <button className="btn btn-light btn-lg px-5">
+                        <button
+                            className="btn btn-light btn-lg px-5"
+                            onClick={() => setShowContactForm(true)}
+                        >
                             Schedule Site Visit
                         </button>
 
@@ -28,6 +36,11 @@ const Parallax = () => {
                 </div>
 
             </div>
+
+            <ContactForm
+                isOpen={showContactForm}
+                onClose={() => setShowContactForm(false)}
+            />
 
         </section>
     );

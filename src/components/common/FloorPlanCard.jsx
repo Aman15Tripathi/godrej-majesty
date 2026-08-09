@@ -1,6 +1,11 @@
+import { useState } from "react";
+import ContactForm from "../contact/ContactForm";
+
 const FloorPlanCard = ({ plan }) => {
+    const [showContactForm, setShowContactForm] = useState(false);
+
     return (
-        <div className="card border-0 shadow floor-plan-card h-100">
+        <div className="card h-100 border-0 shadow-sm">
 
             <img
                 src={plan.image}
@@ -20,52 +25,18 @@ const FloorPlanCard = ({ plan }) => {
 
                 <button
                     className="btn btn-outline-primary w-100"
-                    data-bs-toggle="modal"
-                    data-bs-target={`#planModal${plan.id}`}
+                    onClick={() => setShowContactForm(true)}
                 >
                     View Floor Plan
                 </button>
 
             </div>
 
-            {/* Modal */}
-
-            <div
-                className="modal fade"
-                id={`planModal${plan.id}`}
-                tabIndex="-1"
-            >
-                <div className="modal-dialog modal-xl modal-dialog-centered">
-
-                    <div className="modal-content">
-
-                        <div className="modal-header">
-
-                            <h5 className="modal-title">
-                                {plan.title}
-                            </h5>
-
-                            <button
-                                className="btn-close"
-                                data-bs-dismiss="modal"
-                            ></button>
-
-                        </div>
-
-                        <div className="modal-body p-0">
-
-                            <img
-                                src={plan.image}
-                                alt={plan.title}
-                                className="img-fluid w-100"
-                            />
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
+            {/* Contact Form Popup */}
+            <ContactForm
+                isOpen={showContactForm}
+                onClose={() => setShowContactForm(false)}
+            />
 
         </div>
     );
