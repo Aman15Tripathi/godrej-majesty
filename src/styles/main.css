@@ -682,3 +682,31 @@ section{
 
     padding:80px 0;
 }
+
+.hero-section {
+    position: relative;
+}
+
+.hero-card-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/* Tablet + Mobile */
+@media (max-width: 991px) {
+    .hero-card-wrapper {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero-card-wrapper .row {
+        justify-content: center !important;
+    }
+}
