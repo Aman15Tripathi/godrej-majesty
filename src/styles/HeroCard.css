@@ -1,6 +1,4 @@
-/* =========================================
-   HERO CARD - BLACK / GOLD / WHITE THEME
-   ========================================= */
+/* 
 
 .hero-card {
     background-color: #ffffff;
@@ -9,9 +7,7 @@
     color: #111111;
 }
 
-/* =========================
-   BOOKING OPEN HEADER
-   ========================= */
+
 
 .hero-card .bg-primary {
     background-color: #0b0b0b !important;
@@ -21,18 +17,14 @@
 }
 
 
-/* =========================
-   CARD BODY
-   ========================= */
+
 
 .hero-card .card-body {
     padding: 20px;
 }
 
 
-/* =========================
-   PROJECT TITLE
-   ========================= */
+
 
 .hero-card h2 {
     color: #0b0b0b;
@@ -44,9 +36,7 @@
 }
 
 
-/* =========================
-   DETAILS TABLE
-   ========================= */
+
 
 .hero-card .table {
     margin-top: 15px;
@@ -68,9 +58,7 @@
 }
 
 
-/* =========================
-   GOLD INFORMATION BOXES
-   ========================= */
+
 
 .hero-card .alert-primary {
     background-color: #f8f3df !important;
@@ -80,9 +68,7 @@
 }
 
 
-/* =========================
-   LUXURY TEXT
-   ========================= */
+
 
 .hero-card h6 {
     color: #555555;
@@ -95,9 +81,7 @@
 }
 
 
-/* =========================
-   BOOK SITE VISIT BUTTON
-   ========================= */
+
 
 .hero-card .btn-primary {
     background-color: #c9a227 !important;
@@ -115,9 +99,6 @@
 }
 
 
-/* =========================
-   RERA TEXT
-   ========================= */
 
 .hero-card .small {
     color: #777777;
@@ -125,9 +106,6 @@
 }
 
 
-/* =========================
-   MOBILE
-   ========================= */
 
 @media (max-width: 576px) {
 
@@ -141,5 +119,680 @@
 
     .hero-card h3.text-primary {
         font-size: 1.6rem;
+    }
+} */ 
+
+
+
+/* 
+.hero-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    color: #111111;
+}
+
+
+
+.hero-card .bg-primary {
+    background-color: #0b0b0b !important;
+    color: #c9a227 !important;
+    border-bottom: 2px solid #c9a227;
+    letter-spacing: 0.5px;
+
+   
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+
+
+.hero-card .card-body {
+    padding: 14px 18px;
+}
+
+
+.hero-card h2 {
+    color: #0b0b0b;
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+}
+
+.hero-card p {
+    color: #555555;
+}
+
+
+.hero-card h2 + p {
+    margin-bottom: 10px;
+}
+
+
+
+.hero-card .table {
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.hero-card .table th {
+    color: #0b0b0b;
+    font-weight: 600;
+}
+
+.hero-card .table td {
+    color: #555555;
+    text-align: right;
+}
+
+.hero-card .table > :not(caption) > * > * {
+    border-bottom-color: #e5e5e5;
+
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+.hero-card .alert-primary {
+    background-color: #f8f3df !important;
+    border: 1px solid #c9a227 !important;
+    color: #0b0b0b !important;
+    border-radius: 6px;
+
+    
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    margin-bottom: 7px !important;
+}
+
+
+.hero-card .alert-primary:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+
+
+.hero-card h6 {
+    color: #555555;
+    font-weight: 600;
+
+    
+    margin-top: 12px !important;
+    margin-bottom: 5px;
+}
+
+.hero-card h3.text-primary {
+    color: #c9a227 !important;
+    font-size: 1.6rem;
+
+    margin-bottom: 0;
+}
+
+
+
+.hero-card .btn-primary {
+    background-color: #c9a227 !important;
+    border-color: #c9a227 !important;
+    color: #0b0b0b !important;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+
+   
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.hero-card .btn-primary:hover {
+    background-color: #0b0b0b !important;
+    border-color: #0b0b0b !important;
+    color: #c9a227 !important;
+}
+
+
+.hero-card .small {
+    color: #777777;
+    font-size: 0.7rem;
+
+    margin-top: 8px !important;
+}
+
+
+
+@media (max-width: 576px) {
+
+    .hero-card .card-body {
+        padding: 12px 15px;
+    }
+
+    .hero-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-card h3.text-primary {
+        font-size: 1.5rem;
+    }
+
+    .hero-card .table > :not(caption) > * > * {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .hero-card .alert-primary {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+} */
+
+/* =========================================
+   HERO CARD
+   BLACK / GOLD / WHITE LUXURY THEME
+========================================= */
+
+.hero-card {
+    width: 100%;
+    max-width: 475px;
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border: 1px solid #e5d9b8;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    color: #111111;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.08);
+
+    position: relative;
+}
+
+
+/* =========================================
+   TOP GOLD LINE
+========================================= */
+
+.hero-card-top-line {
+    width: 72%;
+    height: 3px;
+
+    margin: 0 auto;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #c9a227,
+        #e1c35a,
+        #c9a227,
+        transparent
+    );
+
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* =========================================
+   CARD BODY
+========================================= */
+
+.hero-card-body {
+    padding: 28px 30px 25px;
+}
+
+
+/* =========================================
+   PREMIUM RESIDENCES
+========================================= */
+
+.hero-card-label {
+    text-align: center;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #a38432;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================
+   PROJECT TITLE
+========================================= */
+
+.hero-card-title {
+    margin: 0;
+
+    text-align: center;
+
+    color: #111111;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 2rem;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    line-height: 1.15;
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.hero-card-location {
+    margin: 6px 0 24px;
+
+    text-align: center;
+
+    color: #737373;
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================================
+   PROJECT DETAILS
+========================================= */
+
+.hero-card-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100%;
+
+    padding: 15px 12px;
+
+    border: 1px solid #e9e1cf;
+    border-radius: 15px;
+
+    background: #fcfbf8;
+}
+
+
+/* Individual Detail */
+
+.hero-detail {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 3px;
+
+    text-align: center;
+}
+
+
+/* Detail Label */
+
+.hero-detail span {
+    color: #777777;
+
+    font-size: 0.82rem;
+}
+
+
+/* Detail Value */
+
+.hero-detail strong {
+    color: #111111;
+
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   PAYMENT PLANS
+========================================= */
+
+.hero-payment-plans {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 9px;
+
+    margin-top: 19px;
+}
+
+
+/* Payment Box */
+
+.hero-payment-box {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 43px;
+
+    padding: 7px 10px;
+
+    text-align: center;
+
+    border: 1px solid #e3d7b8;
+
+    border-radius: 10px;
+
+    background: #faf9f5;
+
+    color: #795f20;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    line-height: 1.25;
+}
+
+
+/* Full Width Payment Box */
+
+.hero-payment-full {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   PROPERTY TYPE
+========================================= */
+
+.hero-property-type {
+    margin-top: 23px;
+
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 0.82rem;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.hero-price {
+    margin-top: 2px;
+
+    text-align: center;
+
+    color: #b18a20;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 2.15rem;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   BOOK SITE VISIT BUTTON
+========================================= */
+
+.hero-book-btn {
+    width: 100%;
+
+    margin-top: 24px;
+
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #d9b32e,
+        #ad8019
+    );
+
+    color: #ffffff;
+
+    font-size: 0.92rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(177, 138, 32, 0.22);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* Button Hover */
+
+.hero-book-btn:hover {
+    background: linear-gradient(
+        135deg,
+        #b18a20,
+        #8d6813
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(177, 138, 32, 0.3);
+}
+
+
+/* Button Click */
+
+.hero-book-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   RERA
+========================================= */
+
+.hero-rera {
+    margin: 14px 0 0;
+
+    text-align: center;
+
+    color: #a0a0a0;
+
+    font-size: 0.68rem;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .hero-card {
+        max-width: 450px;
+    }
+
+    .hero-card-body {
+        padding: 25px 25px 23px;
+    }
+
+    .hero-card-title {
+        font-size: 1.85rem;
+    }
+
+    .hero-price {
+        font-size: 2rem;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .hero-card {
+        max-width: 100%;
+
+        border-radius: 18px;
+    }
+
+    .hero-card-body {
+        padding: 22px 18px 20px;
+    }
+
+
+    /* Label */
+
+    .hero-card-label {
+        font-size: 0.65rem;
+
+        letter-spacing: 2.4px;
+
+        margin-bottom: 6px;
+    }
+
+
+    /* Title */
+
+    .hero-card-title {
+        font-size: 1.6rem;
+
+        letter-spacing: 0.7px;
+    }
+
+
+    /* Location */
+
+    .hero-card-location {
+        font-size: 0.88rem;
+
+        margin-bottom: 19px;
+    }
+
+
+    /* Details */
+
+    .hero-card-details {
+        padding: 13px 7px;
+
+        border-radius: 13px;
+    }
+
+    .hero-detail span {
+        font-size: 0.72rem;
+    }
+
+    .hero-detail strong {
+        font-size: 0.9rem;
+    }
+
+
+    /* Payment */
+
+    .hero-payment-plans {
+        gap: 7px;
+
+        margin-top: 15px;
+    }
+
+    .hero-payment-box {
+        min-height: 40px;
+
+        padding: 6px 7px;
+
+        font-size: 0.72rem;
+
+        border-radius: 8px;
+    }
+
+
+    /* Property */
+
+    .hero-property-type {
+        margin-top: 18px;
+
+        font-size: 0.72rem;
+
+        letter-spacing: 1.6px;
+    }
+
+
+    /* Price */
+
+    .hero-price {
+        font-size: 1.85rem;
+    }
+
+
+    /* Button */
+
+    .hero-book-btn {
+        margin-top: 20px;
+
+        padding: 12px 15px;
+
+        font-size: 0.82rem;
+
+        letter-spacing: 1.7px;
+
+        border-radius: 10px;
+    }
+
+
+    /* RERA */
+
+    .hero-rera {
+        margin-top: 11px;
+
+        font-size: 0.62rem;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL DEVICES
+========================================= */
+
+@media (max-width: 360px) {
+
+    .hero-card-body {
+        padding: 20px 14px 18px;
+    }
+
+    .hero-card-title {
+        font-size: 1.4rem;
+    }
+
+    .hero-card-location {
+        font-size: 0.82rem;
+    }
+
+    .hero-payment-box {
+        font-size: 0.67rem;
+    }
+
+    .hero-price {
+        font-size: 1.7rem;
     }
 }

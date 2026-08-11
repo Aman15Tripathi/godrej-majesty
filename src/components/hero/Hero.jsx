@@ -1,4 +1,4 @@
-import HeroCard from "./HeroCard";
+import HeroCard from "./HeroCard.jsx";
 import HeroSlider from "./HeroSlider";
 import "../../styles/Hero.css"
 
@@ -19,5 +19,4 @@ const Hero = () => {
         </section>
     );
 };
-
 export default Hero;

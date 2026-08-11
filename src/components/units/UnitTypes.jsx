@@ -10,7 +10,7 @@ const UnitTypes = () => {
     const [showContactForm, setShowContactForm] = useState(false);
 
     return (
-        <section>
+        <section id="units">
             <div className="container">
 
                 <SectionTitle

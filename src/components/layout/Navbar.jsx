@@ -91,7 +91,7 @@ const Navbar = () => {
                         className="btn btn-primary px-4 d-flex align-items-center gap-2"
                     >
                         <FaPhoneAlt size={16} />
-                        +91 9278282828
+                        +91 9654555552
                     </a>
 
                 </div>

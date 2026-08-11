@@ -22,8 +22,8 @@ const footerData = {
     ],
 
     contact: {
-        phone: "+91 98765 43210",
-        email: "sales@godrejmajesty.com",
+        phone: "+91 9654555552",
+        email: "Puneet.tcr@gmail.com",
         address: "Sector-12, Noida Extension",
     },
 

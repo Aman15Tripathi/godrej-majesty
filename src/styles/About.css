@@ -32,9 +32,7 @@
 }
 
 
-/* =========================================
-   DESCRIPTION
-   ========================================= */
+
 
 .about-section .lead.text-secondary {
     color: #555555 !important;
@@ -44,9 +42,7 @@
 }
 
 
-/* =========================================
-   HIGHLIGHTS
-   ========================================= */
+
 
 .about-section .d-flex {
     color: #222222;
@@ -56,9 +52,7 @@
 }
 
 
-/* =========================================
-   CHECK ICON
-   ========================================= */
+
 
 .about-section .text-primary {
     color: #c9a227 !important;
@@ -67,9 +61,7 @@
 }
 
 
-/* =========================================
-   DOWNLOAD BROCHURE BUTTON
-   ========================================= */
+
 
 .about-section .btn-primary {
     background-color: #c9a227 !important;
@@ -91,9 +83,7 @@
 }
 
 
-/* =========================================
-   BUTTON HOVER
-   ========================================= */
+
 
 .about-section .btn-primary:hover {
     background-color: #0b0b0b !important;
